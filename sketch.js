@@ -9,9 +9,9 @@ const Body = Matter.Body;
 
 function preload()
 {
-starImg = loadImage("images/star.png");
-fairyImg = loadAnimation("images/fairyImage1.png","images/fairyImage2.png");
-bgImg = loadImage("images/starNight.png");
+starImg = loadImage("star.png");
+fairyImg = loadAnimation("fairyImage1.png","fairyImage2.png");
+bgImg = loadImage("starNight.png");
 
 
 }
@@ -59,15 +59,15 @@ function draw() {
 
 function keyPressed() {
 
-if(keyCode === RIGHT_ARROW){
+if(keyCode === "d"){
            fairy.x = fairy.x + 20;
 }
 
-        if(keyCode === LEFT_ARROW){
+        if(keyCode === "a"){
            fairy.x = fairy.x - 20;
 }
 
-if (keyCode === DOWN_ARROW) {
+if (keyCode === "s") {
 Matter.Body.setStatic(starBody,false); 
 }
 }
